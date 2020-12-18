@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7153C1D1258CCF880014E918 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7153C1D0258CCF880014E918 /* AppDelegate.swift */; };
+		7153C1D3258CCF880014E918 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7153C1D2258CCF880014E918 /* SceneDelegate.swift */; };
+		7153C1D5258CCF880014E918 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7153C1D4258CCF880014E918 /* HomeViewController.swift */; };
+		7153C1D8258CCF880014E918 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7153C1D6258CCF880014E918 /* Main.storyboard */; };
+		7153C1DA258CCF8A0014E918 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7153C1D9258CCF8A0014E918 /* Assets.xcassets */; };
+		7153C1DD258CCF8A0014E918 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7153C1DB258CCF8A0014E918 /* LaunchScreen.storyboard */; };
+		7153C1E8258CCF8A0014E918 /* StarWarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7153C1E7258CCF8A0014E918 /* StarWarsTests.swift */; };
+		7153C1F3258CCF8A0014E918 /* StarWarsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7153C1F2258CCF8A0014E918 /* StarWarsUITests.swift */; };
+		7153C207258CD75A0014E918 /* FilmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7153C206258CD75A0014E918 /* FilmsViewController.swift */; };
+		7153C20C258CD7710014E918 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7153C20B258CD7710014E918 /* PeopleViewController.swift */; };
+		DD20FB3A258CF2BB0017E903 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20FB39258CF2BB0017E903 /* Movie.swift */; };
+		DD20FB42258CF2CC0017E903 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20FB41258CF2CC0017E903 /* Character.swift */; };
+		DD20FB47258CF2DE0017E903 /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20FB46258CF2DE0017E903 /* MovieResponse.swift */; };
+		DD20FB4C258CF2EC0017E903 /* CharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20FB4B258CF2EC0017E903 /* CharacterResponse.swift */; };
+		DD20FB53258CF4760017E903 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20FB52258CF4760017E903 /* MovieService.swift */; };
+		DD20FB5B258CF4860017E903 /* CharacterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20FB5A258CF4860017E903 /* CharacterService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7153C1E4258CCF8A0014E918 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7153C1C5258CCF880014E918 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7153C1CC258CCF880014E918;
+			remoteInfo = StarWars;
+		};
+		7153C1EF258CCF8A0014E918 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7153C1C5258CCF880014E918 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7153C1CC258CCF880014E918;
+			remoteInfo = StarWars;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7153C1CD258CCF880014E918 /* StarWars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWars.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7153C1D0258CCF880014E918 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7153C1D2258CCF880014E918 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7153C1D4258CCF880014E918 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7153C1D7258CCF880014E918 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7153C1D9258CCF8A0014E918 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7153C1DC258CCF8A0014E918 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7153C1DE258CCF8A0014E918 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7153C1E3258CCF8A0014E918 /* StarWarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarWarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7153C1E7258CCF8A0014E918 /* StarWarsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsTests.swift; sourceTree = "<group>"; };
+		7153C1E9258CCF8A0014E918 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7153C1EE258CCF8A0014E918 /* StarWarsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarWarsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7153C1F2258CCF8A0014E918 /* StarWarsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsUITests.swift; sourceTree = "<group>"; };
+		7153C1F4258CCF8A0014E918 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7153C206258CD75A0014E918 /* FilmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsViewController.swift; sourceTree = "<group>"; };
+		7153C20B258CD7710014E918 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		DD20FB39258CF2BB0017E903 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		DD20FB41258CF2CC0017E903 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		DD20FB46258CF2DE0017E903 /* MovieResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
+		DD20FB4B258CF2EC0017E903 /* CharacterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterResponse.swift; sourceTree = "<group>"; };
+		DD20FB52258CF4760017E903 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		DD20FB5A258CF4860017E903 /* CharacterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7153C1CA258CCF880014E918 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7153C1E0258CCF8A0014E918 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7153C1EB258CCF8A0014E918 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7153C1C4258CCF880014E918 = {
+			isa = PBXGroup;
+			children = (
+				7153C1CF258CCF880014E918 /* StarWars */,
+				7153C1E6258CCF8A0014E918 /* StarWarsTests */,
+				7153C1F1258CCF8A0014E918 /* StarWarsUITests */,
+				7153C1CE258CCF880014E918 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7153C1CE258CCF880014E918 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7153C1CD258CCF880014E918 /* StarWars.app */,
+				7153C1E3258CCF8A0014E918 /* StarWarsTests.xctest */,
+				7153C1EE258CCF8A0014E918 /* StarWarsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7153C1CF258CCF880014E918 /* StarWars */ = {
+			isa = PBXGroup;
+			children = (
+				DD20FB51258CF43D0017E903 /* Networking */,
+				DD20FB50258CF3C30017E903 /* View Controller */,
+				DD20FB38258CF2370017E903 /* Model */,
+				DD20FB36258CF1D70017E903 /* Cells */,
+				7153C1D0258CCF880014E918 /* AppDelegate.swift */,
+				7153C1D2258CCF880014E918 /* SceneDelegate.swift */,
+				7153C1D6258CCF880014E918 /* Main.storyboard */,
+				7153C1D9258CCF8A0014E918 /* Assets.xcassets */,
+				7153C1DB258CCF8A0014E918 /* LaunchScreen.storyboard */,
+				7153C1DE258CCF8A0014E918 /* Info.plist */,
+			);
+			path = StarWars;
+			sourceTree = "<group>";
+		};
+		7153C1E6258CCF8A0014E918 /* StarWarsTests */ = {
+			isa = PBXGroup;
+			children = (
+				7153C1E7258CCF8A0014E918 /* StarWarsTests.swift */,
+				7153C1E9258CCF8A0014E918 /* Info.plist */,
+			);
+			path = StarWarsTests;
+			sourceTree = "<group>";
+		};
+		7153C1F1258CCF8A0014E918 /* StarWarsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7153C1F2258CCF8A0014E918 /* StarWarsUITests.swift */,
+				7153C1F4258CCF8A0014E918 /* Info.plist */,
+			);
+			path = StarWarsUITests;
+			sourceTree = "<group>";
+		};
+		DD20FB36258CF1D70017E903 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DD20FB38258CF2370017E903 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD20FB39258CF2BB0017E903 /* Movie.swift */,
+				DD20FB41258CF2CC0017E903 /* Character.swift */,
+				DD20FB46258CF2DE0017E903 /* MovieResponse.swift */,
+				DD20FB4B258CF2EC0017E903 /* CharacterResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DD20FB50258CF3C30017E903 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7153C206258CD75A0014E918 /* FilmsViewController.swift */,
+				7153C20B258CD7710014E918 /* PeopleViewController.swift */,
+				7153C1D4258CCF880014E918 /* HomeViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		DD20FB51258CF43D0017E903 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DD20FB52258CF4760017E903 /* MovieService.swift */,
+				DD20FB5A258CF4860017E903 /* CharacterService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7153C1CC258CCF880014E918 /* StarWars */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7153C1F7258CCF8A0014E918 /* Build configuration list for PBXNativeTarget "StarWars" */;
+			buildPhases = (
+				7153C1C9258CCF880014E918 /* Sources */,
+				7153C1CA258CCF880014E918 /* Frameworks */,
+				7153C1CB258CCF880014E918 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StarWars;
+			productName = StarWars;
+			productReference = 7153C1CD258CCF880014E918 /* StarWars.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7153C1E2258CCF8A0014E918 /* StarWarsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7153C1FA258CCF8A0014E918 /* Build configuration list for PBXNativeTarget "StarWarsTests" */;
+			buildPhases = (
+				7153C1DF258CCF8A0014E918 /* Sources */,
+				7153C1E0258CCF8A0014E918 /* Frameworks */,
+				7153C1E1258CCF8A0014E918 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7153C1E5258CCF8A0014E918 /* PBXTargetDependency */,
+			);
+			name = StarWarsTests;
+			productName = StarWarsTests;
+			productReference = 7153C1E3258CCF8A0014E918 /* StarWarsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7153C1ED258CCF8A0014E918 /* StarWarsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7153C1FD258CCF8A0014E918 /* Build configuration list for PBXNativeTarget "StarWarsUITests" */;
+			buildPhases = (
+				7153C1EA258CCF8A0014E918 /* Sources */,
+				7153C1EB258CCF8A0014E918 /* Frameworks */,
+				7153C1EC258CCF8A0014E918 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7153C1F0258CCF8A0014E918 /* PBXTargetDependency */,
+			);
+			name = StarWarsUITests;
+			productName = StarWarsUITests;
+			productReference = 7153C1EE258CCF8A0014E918 /* StarWarsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7153C1C5258CCF880014E918 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					7153C1CC258CCF880014E918 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					7153C1E2258CCF8A0014E918 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 7153C1CC258CCF880014E918;
+					};
+					7153C1ED258CCF8A0014E918 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 7153C1CC258CCF880014E918;
+					};
+				};
+			};
+			buildConfigurationList = 7153C1C8258CCF880014E918 /* Build configuration list for PBXProject "StarWars" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7153C1C4258CCF880014E918;
+			productRefGroup = 7153C1CE258CCF880014E918 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7153C1CC258CCF880014E918 /* StarWars */,
+				7153C1E2258CCF8A0014E918 /* StarWarsTests */,
+				7153C1ED258CCF8A0014E918 /* StarWarsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7153C1CB258CCF880014E918 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7153C1DD258CCF8A0014E918 /* LaunchScreen.storyboard in Resources */,
+				7153C1DA258CCF8A0014E918 /* Assets.xcassets in Resources */,
+				7153C1D8258CCF880014E918 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7153C1E1258CCF8A0014E918 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7153C1EC258CCF8A0014E918 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7153C1C9258CCF880014E918 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7153C20C258CD7710014E918 /* PeopleViewController.swift in Sources */,
+				7153C1D5258CCF880014E918 /* HomeViewController.swift in Sources */,
+				DD20FB42258CF2CC0017E903 /* Character.swift in Sources */,
+				DD20FB3A258CF2BB0017E903 /* Movie.swift in Sources */,
+				DD20FB53258CF4760017E903 /* MovieService.swift in Sources */,
+				7153C1D1258CCF880014E918 /* AppDelegate.swift in Sources */,
+				DD20FB5B258CF4860017E903 /* CharacterService.swift in Sources */,
+				DD20FB4C258CF2EC0017E903 /* CharacterResponse.swift in Sources */,
+				DD20FB47258CF2DE0017E903 /* MovieResponse.swift in Sources */,
+				7153C207258CD75A0014E918 /* FilmsViewController.swift in Sources */,
+				7153C1D3258CCF880014E918 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7153C1DF258CCF8A0014E918 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7153C1E8258CCF8A0014E918 /* StarWarsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7153C1EA258CCF8A0014E918 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7153C1F3258CCF8A0014E918 /* StarWarsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7153C1E5258CCF8A0014E918 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7153C1CC258CCF880014E918 /* StarWars */;
+			targetProxy = 7153C1E4258CCF8A0014E918 /* PBXContainerItemProxy */;
+		};
+		7153C1F0258CCF8A0014E918 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7153C1CC258CCF880014E918 /* StarWars */;
+			targetProxy = 7153C1EF258CCF8A0014E918 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7153C1D6258CCF880014E918 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7153C1D7258CCF880014E918 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7153C1DB258CCF8A0014E918 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7153C1DC258CCF8A0014E918 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7153C1F5258CCF8A0014E918 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7153C1F6258CCF8A0014E918 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7153C1F8258CCF8A0014E918 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StarWars/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zebaze.StarWars;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7153C1F9258CCF8A0014E918 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StarWars/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zebaze.StarWars;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7153C1FB258CCF8A0014E918 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StarWarsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zebaze.StarWarsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarWars.app/StarWars";
+			};
+			name = Debug;
+		};
+		7153C1FC258CCF8A0014E918 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StarWarsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zebaze.StarWarsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarWars.app/StarWars";
+			};
+			name = Release;
+		};
+		7153C1FE258CCF8A0014E918 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StarWarsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zebaze.StarWarsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StarWars;
+			};
+			name = Debug;
+		};
+		7153C1FF258CCF8A0014E918 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StarWarsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zebaze.StarWarsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StarWars;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7153C1C8258CCF880014E918 /* Build configuration list for PBXProject "StarWars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7153C1F5258CCF8A0014E918 /* Debug */,
+				7153C1F6258CCF8A0014E918 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7153C1F7258CCF8A0014E918 /* Build configuration list for PBXNativeTarget "StarWars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7153C1F8258CCF8A0014E918 /* Debug */,
+				7153C1F9258CCF8A0014E918 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7153C1FA258CCF8A0014E918 /* Build configuration list for PBXNativeTarget "StarWarsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7153C1FB258CCF8A0014E918 /* Debug */,
+				7153C1FC258CCF8A0014E918 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7153C1FD258CCF8A0014E918 /* Build configuration list for PBXNativeTarget "StarWarsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7153C1FE258CCF8A0014E918 /* Debug */,
+				7153C1FF258CCF8A0014E918 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7153C1C5258CCF880014E918 /* Project object */;
+}
